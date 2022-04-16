@@ -1,0 +1,25 @@
+{
+  "name": "@coffeephin/styles",
+  "version": "0.0.0",
+  "description": "The styles library for Coffeephin UI's components.",
+  "keywords": [
+    "styles",
+    "scss"
+  ],
+  "author": "Thinh Trinh <thinh.duc.trinh@gmail.com>",
+  "homepage": "https://github.com/trinhthinh388/coffeephin-ui#readme",
+  "license": "ISC",
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trinhthinh388/coffeephin-ui.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/trinhthinh388/coffeephin-ui/issues"
+  }
+}

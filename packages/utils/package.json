@@ -1,0 +1,36 @@
+{
+  "name": "@coffeephin/utils",
+  "version": "0.0.0",
+  "description": "The utilities library for Coffeephin UI.",
+  "keywords": [
+    "utilities",
+    "helpers",
+    "theme",
+    "colors"
+  ],
+  "author": "Thinh Trinh <thinh.duc.trinh@gmail.com>",
+  "homepage": "https://github.com/trinhthinh388/coffeephin-ui#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "directories": {
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trinhthinh388/coffeephin-ui.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/trinhthinh388/coffeephin-ui/issues"
+  },
+  "devDependencies": {
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
+}

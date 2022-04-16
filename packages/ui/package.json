@@ -1,0 +1,30 @@
+{
+  "name": "@coffeephin/ui",
+  "version": "0.0.0",
+  "description": "The UI components for Coffeephin library.",
+  "keywords": [
+    "UI",
+    "components."
+  ],
+  "author": "Thinh Trinh <thinh.duc.trinh@gmail.com>",
+  "homepage": "https://github.com/trinhthinh388/coffeephin-ui#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "directories": {
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trinhthinh388/coffeephin-ui.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/trinhthinh388/coffeephin-ui/issues"
+  }
+}
