@@ -24,13 +24,20 @@
     "url": "git+https://github.com/trinhthinh388/coffeephin-ui.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "jest"
   },
   "bugs": {
     "url": "https://github.com/trinhthinh388/coffeephin-ui/issues"
   },
   "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/tinycolor2": "^1.4.3",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "tinycolor2": "^1.4.2"
   }
 }
