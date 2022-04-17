@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "ES2015",
     "declaration": true,
     "noImplicitAny": false,
     "removeComments": true,
@@ -9,7 +9,7 @@
     "experimentalDecorators": true,
     "target": "es6",
     "sourceMap": true,
-    "lib": ["es6"],
+    "lib": ["es6", "es5", "dom", "DOM.Iterable", "WebWorker"],
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {

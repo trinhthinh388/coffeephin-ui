@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "module": "es2015",
+    "module": "commonjs",
     "declaration": true,
     "noImplicitAny": false,
     "removeComments": true,
@@ -9,10 +9,13 @@
     "experimentalDecorators": true,
     "target": "es6",
     "sourceMap": true,
-    "lib": ["es6"],
+    "lib": ["es6", "es5", "dom", "DOM.Iterable", "WebWorker"],
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["src/*"]
+    }
   },
   "include": ["**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts", "config/rollup.*.ts"]
+  "exclude": ["node_modules", "**/*.spec.ts", "**/*.test.ts"]
 }

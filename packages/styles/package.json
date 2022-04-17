@@ -4,7 +4,8 @@
   "description": "The styles library for Coffeephin UI's components.",
   "keywords": [
     "styles",
-    "scss"
+    "scss",
+    "css"
   ],
   "author": "Thinh Trinh <thinh.duc.trinh@gmail.com>",
   "homepage": "https://github.com/trinhthinh388/coffeephin-ui#readme",
@@ -17,9 +18,18 @@
     "url": "git+https://github.com/trinhthinh388/coffeephin-ui.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "build": "rimraf dist && rollup -c ../../config/rollup.styles.ts --configPlugin rollup-plugin-typescript2"
   },
   "bugs": {
     "url": "https://github.com/trinhthinh388/coffeephin-ui/issues"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "node-sass": "^7.0.1",
+    "postcss": "^8.4.12",
+    "rimraf": "^3.0.2",
+    "rollup-plugin-postcss": "^4.0.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
   }
 }
