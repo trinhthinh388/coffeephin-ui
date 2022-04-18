@@ -1,4 +1,3 @@
-import * as tinycolor from 'tinycolor2';
 import {
   DARK_COLOR_COUNT,
   LIGHT_COLOR_COUNT,
@@ -8,7 +7,11 @@ import {
   SATURATION_STEP_2,
   HUE_STEP
 } from 'src/constants';
-import { ColorDepth } from 'src/config/theme/colors';
+import { ColorDepth, Colors } from 'src/config/theme/colors';
+import { map, kebabCase } from 'lodash';
+import { makeCSSVar, injectCSSToHead, addPrefix } from './css';
+
+const tinycolor = require('tinycolor2');
 
 export default class ColorPalette {
   readonly color: string;
@@ -115,4 +118,25 @@ export default class ColorPalette {
       }
     );
   }
+}
+
+/**
+ * genColorCSSVars is a function that generates CSS vars template and inject to `head` element.
+ * @param {object} themeColors - the colors part of theme's object.
+ */
+export function genColorCSSVars(themeColors: Colors) {
+  const cssVars = map(themeColors, (value, color) => {
+    if (typeof value === 'string') return makeCSSVar(kebabCase(color), value);
+    return map(themeColors[color] as ColorDepth, (alphaValue, level) => {
+      return makeCSSVar(`${kebabCase(color)}-${level}`, alphaValue);
+    });
+  });
+
+  const template = `
+    :host, :root, [data-theme] {
+      ${addPrefix(cssVars).flat().join(';')};
+      }
+    `;
+
+  injectCSSToHead(template);
 }

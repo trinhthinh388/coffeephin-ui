@@ -1,4 +1,4 @@
-import { defaultColors, BaseColors, defaultBaseColors } from '../src/config';
+import { defaultColors } from '../src/config';
 
 test('Should generate correct color palette', () => {
   expect(typeof defaultColors.black).toBe('string');

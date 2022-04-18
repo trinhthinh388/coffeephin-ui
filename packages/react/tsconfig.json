@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "jsx": "react",
     "module": "es2015",
     "declaration": true,
     "noImplicitAny": false,
@@ -13,6 +12,8 @@
     "lib": ["es6", "DOM", "DOM.Iterable"],
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "baseUrl": ".",
     "paths": {
       "src/*": ["src/*"]
     }

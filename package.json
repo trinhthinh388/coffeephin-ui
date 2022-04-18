@@ -10,13 +10,16 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean -y",
+    "clean:all": "yarn clean && rimraf node_modules",
     "dev:ui-docs": "yarn workspace @coffeephin/ui-docs dev",
     "utils": "yarn workspace @coffeephin/utils",
-    "styles": "yarn workspace @coffeephin/styles"
+    "styles": "yarn workspace @coffeephin/styles",
+    "react": "yarn workspace @coffeephin/react"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.1.0",
     "@rollup/plugin-node-resolve": "^13.2.1",
+    "@types/node": "^17.0.24",
     "autoprefixer": "^10.4.4",
     "eslint": "^8.13.0",
     "lerna": "^4.0.0",

@@ -1,14 +1,14 @@
 export type Breakpoint = {
-  [key: string]: string;
-  sm: string;
-  md: string;
-  lg: string;
-  xl: string;
+  [key: string]: number;
+  sm: number;
+  md: number;
+  lg: number;
+  xl: number;
 };
 
 export const defaultBP: Breakpoint = {
-  sm: '640px',
-  md: '768px',
-  lg: '1024px',
-  xl: '1280px'
+  sm: 640,
+  md: 768,
+  lg: 1024,
+  xl: 1280
 };

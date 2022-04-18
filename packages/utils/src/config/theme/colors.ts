@@ -70,8 +70,8 @@ export type DefaultBaseColors = {
 export const defaultBaseColors: DefaultBaseColors = {
   black: '#000000',
   white: '#ffffff',
-  blackAlpha: '#000000',
-  whiteAlpha: '#ffffff',
+  blackAlpha: '#0000007a',
+  whiteAlpha: '#ffffff7a',
   gray: '#4b5563',
   red: '#dc2626',
   orange: '#ea580c',

@@ -1,0 +1,50 @@
+{
+  "name": "@coffeephin/react",
+  "version": "0.0.0",
+  "description": "The React UI components for Coffeephin library.",
+  "keywords": [
+    "UI",
+    "components."
+  ],
+  "author": "Thinh Trinh <thinh.duc.trinh@gmail.com>",
+  "homepage": "https://github.com/trinhthinh388/coffeephin-ui#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "directories": {
+    "src": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trinhthinh388/coffeephin-ui.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "storybook": "start-storybook -p 6006 --no-manager-cache",
+    "build-storybook": "build-storybook"
+  },
+  "bugs": {
+    "url": "https://github.com/trinhthinh388/coffeephin-ui/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@storybook/addon-actions": "^6.4.22",
+    "@storybook/react": "^6.4.22",
+    "@storybook/testing-library": "^0.0.9",
+    "@types/lodash": "^4.14.181",
+    "@types/react": "^18.0.5",
+    "@types/react-dom": "^18.0.1",
+    "babel-loader": "^8.2.4",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "storybook-dark-mode": "^1.0.9"
+  },
+  "dependencies": {
+    "@coffeephin/utils": "*",
+    "lodash": "^4.17.21",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
